@@ -32,7 +32,7 @@ The files and directories in the root directory are organized as the following:
   * **images** 
     *  **eda** : stores histogram graphs generated when conducting the EDA process 
     *  **results**: stores the graphs of classification reports, ROC curves and features importance
-  * **log**: stores the log files generated when testing library module: churn_library.py
+  * **logs**: stores the log files generated when testing library module: churn_library.py
   * **model** stores the models in pkl format 
 ## Running Files
 * This project can be run in python 3.6 or 3.8. The dependent modules are specified in requirements_py3.6.txt or requirements_py3.8.txt
