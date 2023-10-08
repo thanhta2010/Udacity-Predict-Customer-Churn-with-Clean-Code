@@ -8,7 +8,7 @@ The module: churn_library.py and the testing file: churn_script_logging_and_test
 
 The dataset for this project, which was pulled from [Kaggle](https://www.kaggle.com/datasets/sakshigoyal7/credit-card-customers/code)
 
-The project 
+This project follows the following steps:
 * Load the dataset from Kaggle which is over 10k records of credit card customer data
 * Exploratory Data Analysis (EDA) : Explore data features and analyze correlations between features in data
 * Feature Engineering : This step consist of: one-hot-encoding categorical features, standardization and resulting into 19 features
