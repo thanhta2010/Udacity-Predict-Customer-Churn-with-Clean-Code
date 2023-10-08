@@ -15,30 +15,30 @@ This project follows the following steps:
 * Modeling :
   * Train two classification models (sklearn random forest and logistic regression)
   * Hyper-parameter tuning with l2 regularization: “lbfgs” for logistic regression classification model
-  * Hyper-parameter tuning using GridSearchCV with 5-fold cross validation
-  * Model evaluation using ROC curves and store "ROC curves" graph for evaluation 
-* Identify most important features influencing the predictions and store the "feature important" graph
+  * Hyper-parameter tuning using GridSearchCV with 5-fold cross validation for Random Forest classification model
+  * Model evaluation using ROC curves and store "ROC curves" graph for further evaluation
+* Identify most important features influencing the predictions and store in the "feature importance" graph
 * Save best models with their performance metrics
 
 ## Files and data description
 The files and directories in the root directory are organized as the following:
 * Project files
-  * **churn_notebook.ipynb**: the notebook is provided to experiment, analyzed  the data, build and evaluate ML models
-  * **churn_library.py**: the codes in this library module is refactored follows PEP8 coding and engineering best practices so it is a production-ready module
+  * **churn_notebook.ipynb**: the notebook is provided to experiment, analyze the data, then build and evaluate ML models
+  * **churn_library.py**: the codes in this library module is refactored following PEP8 coding and engineering best practices so it can become a production-ready module
   * **churn_script_logging_and_tests.py**: this testing file is used to test the library module: churn_library.py with unit testing, logging, and best coding practices
 
 * Folders
   * **data** : stores bank_data.csv which is a 10k-records of credit card customer data
   * **images** 
-    *  **eda** : stores histogram graphs generate when conducting the EDA process 
+    *  **eda** : stores histogram graphs generated when conducting the EDA process 
     *  **results**: stores the graphs of classification reports, ROC curves and features importance
-  * **log**: stores  the log files generated when testing library module: churn_library.py
+  * **log**: stores the log files generated when testing library module: churn_library.py
   * **model** stores the models in pkl format 
 ## Running Files
-* This project can run in python 3.6 or 3.8. The dependent modules are specified in requirements_py3.6.txt and requirements_py3.8.txt. 
-* To run the project: python churn_library.py or run interactively cell by cell inside the note book: churn_notebook.ipynb
+* This project can be run in python 3.6 or 3.8. The dependent modules are specified in requirements_py3.6.txt or requirements_py3.8.txt
+* To run the project: python churn_library.py or run interactively cell by cell inside the notebook: churn_notebook.ipynb
 * To test the functions in the library module: python churn_script_logging_and_tests.py
-* All of the code executions (except in the note book) are generated logs in log file: churn_library.log
+* All of the code executions (except in the notebook) are generated logs in log file: churn_library.log
 
 
 
