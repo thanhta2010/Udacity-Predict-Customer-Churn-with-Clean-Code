@@ -1,0 +1,22 @@
+root - INFO - Invoke function: test_import to retrieve bank data from a file
+root - INFO - Enter function: import_data
+root - INFO - Return data frame: csv_df
+root - INFO - Testing import_data: SUCCESS
+root - INFO - Invoke function: test_eda to test perform_eda
+root - INFO - Enter function: import_data
+root - INFO - Return data frame: csv_df
+root - INFO - Enter function: perform_eda
+root - INFO - Save image: churn_hist.png
+root - INFO - Save image: customer_age_hist.png
+root - INFO - Save image: marital_status_hist.png
+root - INFO - Save image: total_transaction_hist.png
+root - INFO - Save image: heatmap.png
+root - INFO - Testing perform_eda: SUCCESS
+root - INFO - Invoke function: test_encoder_helper to test encoder_helper
+root - INFO - Enter function: import_data
+root - INFO - Return data frame: csv_df
+root - INFO - Enter function: perform_eda
+root - INFO - Save image: churn_hist.png
+root - INFO - Save image: customer_age_hist.png
+root - INFO - Save image: marital_status_hist.png
+root - INFO - Save image: total_transaction_hist.png
