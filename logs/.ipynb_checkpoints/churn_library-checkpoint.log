@@ -20,3 +20,42 @@ root - INFO - Save image: churn_hist.png
 root - INFO - Save image: customer_age_hist.png
 root - INFO - Save image: marital_status_hist.png
 root - INFO - Save image: total_transaction_hist.png
+root - INFO - Save image: heatmap.png
+root - INFO - Enter function: encoder_helper
+root - INFO - Return data frame: encoder_df
+root - INFO - Testing encoder_helper: SUCCESS
+root - INFO - Invoke function: test_perform_feature_engineering
+root - INFO - Enter function: import_data
+root - INFO - Return data frame: csv_df
+root - INFO - Enter function: perform_eda
+root - INFO - Save image: churn_hist.png
+root - INFO - Save image: customer_age_hist.png
+root - INFO - Save image: marital_status_hist.png
+root - INFO - Save image: total_transaction_hist.png
+root - INFO - Save image: heatmap.png
+root - INFO - Enter function: perform_feature_engineering
+root - INFO - Invoke function: encoder_helper
+root - INFO - Enter function: encoder_helper
+root - INFO - Return data frame: encoder_df
+root - INFO - Invoke function: train_test_split
+root - INFO - return: X_train, X_test, y_train, y_test
+root - INFO - Testing perform_feature_engineering: SUCCESS
+root - INFO - Invoke function: test_train_and_store_models
+root - INFO - Enter function: import_data
+root - INFO - Return data frame: csv_df
+root - INFO - Enter function: perform_eda
+root - INFO - Save image: churn_hist.png
+root - INFO - Save image: customer_age_hist.png
+root - INFO - Save image: marital_status_hist.png
+root - INFO - Save image: total_transaction_hist.png
+root - INFO - Save image: heatmap.png
+root - INFO - Enter function: perform_feature_engineering
+root - INFO - Invoke function: encoder_helper
+root - INFO - Enter function: encoder_helper
+root - INFO - Return data frame: encoder_df
+root - INFO - Invoke function: train_test_split
+root - INFO - return: X_train, X_test, y_train, y_test
+root - INFO - Enter function: train_and_store_models
+root - INFO - Invoke function: lrc.fit
+root - INFO - Invoke function: GridSearchCV
+root - INFO - Invoke function: cv_rfc.fit

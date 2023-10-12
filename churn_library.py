@@ -39,6 +39,7 @@ logging.basicConfig(
 
 #logger = setup_logger('lib_logger', './logs/churn_library.log')
 
+
 def import_data(path):
     '''
     returns dataframe for the csv found at path
@@ -73,32 +74,39 @@ def perform_eda(eda_df):
     eda_df['Churn'] = eda_df['Attrition_Flag'].apply(
         lambda val: 0 if val == "Existing Customer" else 1)
 
-    plt.figure(figsize=(20, 10))
-
     # Churn Histogram
+    plt.figure(figsize=(20, 10))
     churn_hist = eda_df['Churn'].hist()
     logging.info("Save image: churn_hist.png")
     churn_hist.figure.savefig('./images/eda/churn_hist.png')
+    plt.close()  # need to close plt so the graph not overwrite
 
     # Customer Age Histogram
+    plt.figure(figsize=(20, 10))
     customer_age_hist = eda_df['Customer_Age'].hist()
     logging.info("Save image: customer_age_hist.png")
     customer_age_hist.figure.savefig('./images/eda/customer_age_hist.png')
+    plt.close()  # need to close plt so the graph not overwrite
 
     # Marital Status Histogram
+    plt.figure(figsize=(20, 10))
     marital_status_hist = eda_df.Marital_Status.value_counts(
         'normalize').plot(kind='bar')
     logging.info("Save image: marital_status_hist.png")
     marital_status_hist.figure.savefig('./images/eda/marital_status_hist.png')
+    plt.close()  # need to close plt so marital_status graph not overwrite
 
     # Total Transaction Histogram
+    plt.figure(figsize=(20, 10))  # need to reset the graph
     total_transaction_hist = sns.histplot(
         eda_df['Total_Trans_Ct'], stat='density', kde=True)
     logging.info("Save image: total_transaction_hist.png")
     total_transaction_hist.figure.savefig(
         './images/eda/total_transaction_hist.png')
+    plt.close()  # need to close plt so the graph not overwrite
 
     # Heatmap
+    plt.figure(figsize=(20, 10))  # need to reset the graph
     heatmap = sns.heatmap(
         eda_df.corr(),
         annot=False,
@@ -106,7 +114,6 @@ def perform_eda(eda_df):
         linewidths=2)
     logging.info("Save image: heatmap.png")
     heatmap.figure.savefig('./images/eda/heatmap.png')
-
     plt.close()
 
 
@@ -356,7 +363,9 @@ def feature_importance_plot(rfc_model, x_data):
     # Add feature names as x-axis labels
     plt.xticks(range(x_data.shape[1]), names, rotation=90)
     logging.info("Save image: rfc_feature_importance.png")
-    plt.savefig("./images/results/rfc_feature_importance.png")
+    plt.savefig(
+        "./images/results/rfc_feature_importance.png",
+        bbox_inches='tight')
     plt.close()
 
 

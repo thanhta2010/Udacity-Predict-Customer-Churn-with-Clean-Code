@@ -12,7 +12,6 @@ import os
 import logging
 import pandas as pd
 import churn_library as cls
-#from utils import setup_logger
 
 logging.basicConfig(
     filename='./logs/test_churn_library.log',
@@ -20,10 +19,7 @@ logging.basicConfig(
     filemode='w',
     format='%(name)s - %(levelname)s - %(message)s')
 
-#logger = setup_logger('test_logger', './logs/churn_library.log')
 
-
-# def test_import(import_data):
 def test_import():
     '''
     test data import - this example is completed for you to assist
@@ -44,8 +40,6 @@ with the other test functions
         logging.error(
             "Testing import_data: The file doesn't appear to have rows and columns")
         raise error
-
-# def test_eda(perform_eda):
 
 
 def test_eda():
@@ -74,8 +68,6 @@ def test_eda():
         logging.error(
             "Testing perform_eda: at least one of the image files does not save.")
         raise error
-
-# def test_encoder_helper(encoder_helper):
 
 
 def test_encoder_helper():
@@ -110,8 +102,6 @@ def test_encoder_helper():
             not match with the length of cat_columns")
         raise error
 
-# def test_perform_feature_engineering(perform_feature_engineering):
-
 
 def test_perform_feature_engineering():
     '''
@@ -144,7 +134,6 @@ def test_perform_feature_engineering():
         raise error
 
 
-# def test_train_and_store_models(train_and_store_models):
 def test_train_and_store_models():
     '''
     test train_and_store_models
